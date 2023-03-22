@@ -3,7 +3,7 @@ Simple Events is a Unity asset meant for simple UI event handling such as detect
 being said, it's a very simple alternative but it offers almost the same amount of features reliably.
 
 # Getting Started
-To get started, download the unity package over at *link* and import the C# Scripts. That's it!
+To get started, download the unity package over at https://u3d.as/32NA and import the C# Scripts. That's it!
 
 # How To Use
 Make a new script and make the class implement ```bl4ckdev.events``` 
