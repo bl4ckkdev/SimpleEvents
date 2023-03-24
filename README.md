@@ -30,6 +30,11 @@ From there, there are 5 event functions that can be used
 ```csharp
 public class Script : bl4ckdev.Events
 {
+    public void Update()
+    {
+        UpdateEvents(); // Updates event handling every frame.
+    }
+    
     public override void Over()
     {
         // Runs whenever the mouse pointer is over this object
