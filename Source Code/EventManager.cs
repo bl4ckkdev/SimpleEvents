@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 namespace bl4ckdev
 {
     public class EventManager : MonoBehaviour
     {
-
         public static bool IsPointerOverUIElement(GameObject g)
         {
             return IsPointerOverUIElement(GetEventSystemRaycastResults(), g);
@@ -25,7 +23,7 @@ namespace bl4ckdev
             return false;
         }
         
-        static List<RaycastResult> GetEventSystemRaycastResults()
+        private static List<RaycastResult> GetEventSystemRaycastResults()
         {
             PointerEventData eventData = new PointerEventData(EventSystem.current);
             eventData.position = Input.mousePosition;
